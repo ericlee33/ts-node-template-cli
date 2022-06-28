@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ts-node",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "/usr/local/bin/node",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register/transpile-only",
+                "-r",
+                "tsconfig-paths/register"
+            ],
+            "args": [
+                "./src/index.ts"
+            ],
+            "cwd": "${workspaceRoot}",
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": [
+                "<node_internals>/**",
+                "node_modules/**"
+            ],
+            "env": {
+                "TS_NODE_PROJECT": "tsconfig.json",
+                "ENV": "development"
+            }
+        }
+    ]
+}

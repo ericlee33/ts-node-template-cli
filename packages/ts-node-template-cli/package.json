@@ -1,0 +1,33 @@
+{
+  "name": "ts-node-template-cli",
+  "version": "1.0.1",
+  "description": "Command line interface for rapid ts-based node project development",
+  "main": "index.js",
+  "bin": {
+    "entry": "./bin/cli.js"
+  },
+  "scripts": {
+    "dev:js": "node ./dist/index.js",
+    "build": "tsc",
+    "publish": "pnpm build && pnpm publish"
+  },
+  "keywords": [
+    "CLI",
+    "TypeScript",
+    "node",
+    "ts-node"
+  ],
+  "author": "ericfly33@gmail.com",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericlee33/ts-node-template-cli",
+    "directory": "./"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
