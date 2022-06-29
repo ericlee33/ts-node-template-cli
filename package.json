@@ -1,11 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write ."
   },
-  "devDependencies": {
+  "dependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "husky": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "prettier": "^2.7.1"
   }
 }
