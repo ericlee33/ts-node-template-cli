@@ -1,3 +1,5 @@
 import Entry from './entry';
 
-export default new Entry().init();
+const entry = new Entry().init();
+
+export default entry;

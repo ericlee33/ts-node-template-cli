@@ -7,7 +7,7 @@ function executeCommander(callback) {
     callback();
   });
 
-  program.parse();
+  program.parse(process.argv);
 }
 
 export default executeCommander;
